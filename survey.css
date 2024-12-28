@@ -1,0 +1,89 @@
+* {
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.child{
+    display: flex;
+    flex-direction: column;
+}
+
+.parent-survey {
+    background-image: url("surveyImg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 120vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#head{
+    text-align: center;
+}
+.child-survey {
+    border: 2px solid wheat;    
+    background-color: rgb(20, 20, 44);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 700px;
+}
+
+.child-survey form div {
+    margin-bottom: 10px; 
+}
+
+.child-survey form div label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.child-survey form div input,
+.child-survey form div select{
+   width: 100%;
+   padding: 10px;
+   border: 1px solid wheat;
+   border-radius: 5px;
+   font-size: 14px;
+}
+
+.child-survey form div input[type="radio"],
+.child-survey form div input[type="checkbox"]{
+    width: auto;
+    margin-right: 10px;
+}
+
+.child-survey form div select{
+    cursor: pointer;
+}
+
+.child-survey form div textarea{
+    width: 100%;
+    height: 80px;
+    resize: none;
+}
+
+.child-survey form div input[type="submit"]{
+    background-color: green;
+}
+
+.child-survey form div input::placeholder,
+.child-survey form div textarea::placeholder
+{
+    color: black;
+}
+
+
+
+
+
